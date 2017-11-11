@@ -6,7 +6,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 		CalculatorLogic cal = new CalculatorLogic();
 		cal.initMatriz();
-		String exp = "2+4*5^2/6-1";
+		String exp = "(2+4)*5^2/6-1";
 		char[] infijo = new char[exp.length()];
 		exp.getChars(0, exp.length(), infijo, 0);
 		cal.calculate(infijo);
